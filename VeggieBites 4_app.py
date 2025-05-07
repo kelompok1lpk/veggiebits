@@ -24,8 +24,6 @@ if 'page' not in st.session_state:
 
 # ---------- HALAMAN-HALAMAN ----------
 def halaman_1():
-        unsafe_allow_html=True
-    )
     st.markdown('<div class="card">', unsafe_allow_html=True)
     st.markdown(
     """
