@@ -41,7 +41,7 @@ def halaman_1():
         color: #1A1A1A;
         text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
     ">
-        🥦Helloooww welcome at VeggieBites guys!!
+        🥦 Helloooww welcome at VeggieBites guys!!
     </h1>
     """, unsafe_allow_html=True
 )
