@@ -27,7 +27,7 @@ def halaman_1():
     st.markdown(
         """
         <h1 style="
-            font-weight: 900;
+            font-weight: 1000;
             color: #1A1A1A;
             text-shadow: 1px 1px 3px rgba(255,255,255,0.6);
             background-color: rgba(255, 255, 255, 0.6);
@@ -35,7 +35,7 @@ def halaman_1():
             border-radius: 10px;
             display: inline-block;
         ">
-            🥦 Helloooww welcome at VeggieBites guys!!
+            🥦Helloooww welcome at VeggieBites guys!!
         </h1>
         """, 
         unsafe_allow_html=True
