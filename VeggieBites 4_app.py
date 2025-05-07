@@ -34,10 +34,10 @@ if 'page' not in st.session_state:
 # ---------- HALAMAN-HALAMAN ----------
 def halaman_1():
     st.markdown("""
-        <h1 style='font-weight: 900;
+        <h1 style="font-weight: 1000;
                    font-size: 48px;
                    color: #1A1A1A;
-                   text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);'>
+                   text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);">
             🥦 Helloooww welcome at VeggieBites guys!!
         </h1>
     """, unsafe_allow_html=True)
