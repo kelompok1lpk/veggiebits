@@ -54,6 +54,7 @@ def halaman_1():
     
     if st.button("Next"):
         st.session_state["page"] = "halaman_2"
+    st.markdown('</div>', unsafe_allow_html=True)
         
 def halaman_2():
     st.markdown('<div class="card">', unsafe_allow_html=True)
