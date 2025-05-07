@@ -7,7 +7,7 @@ st.markdown(
     """
     <style>
     body {
-        background-image: url("https://ibb.co.com/nM406nM8");
+        background-image: url("https://i.ibb.co.com/xqwsXfq8/IMG-0774.jpg");
         background-size: cover;
         background-attachment: fixed;
     }
@@ -21,7 +21,7 @@ st.markdown(
     f"""
     <style>
     body {{
-        background-image: url("https://ibb.co.com/nM406nM8");
+        background-image: url("https://i.ibb.co.com/xqwsXfq8/IMG-0774.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
