@@ -11,6 +11,7 @@ html, body, [class*="css"]  {
     font-family: 'Fredoka', sans-serif;
 }
 </style>
+
 st.markdown(
     f"""
     <style>
