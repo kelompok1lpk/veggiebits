@@ -171,4 +171,4 @@ halaman_fungsi = {
 if "page" not in st.session_state:
     st.session_state.page = "halaman_1"
     
-halaman_fungsi[st.session_state.page]{}
+halaman_fungsi[st.session_state.-page]{}
