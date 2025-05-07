@@ -168,4 +168,6 @@ halaman_fungsi = {
     "halaman_4": halaman_4,
     "halaman_5": halaman_5
 }
+if "page" not in st.session_state:
+    st.session_state.page = "halaman_1"
 halaman_fungsi[st.session_state.page]()
