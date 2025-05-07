@@ -104,8 +104,8 @@ def halaman_3():
 
 
 def halaman_4():
-    st.title("Butuh Pengganti Bahan?")
-    st.markdown("Masukkan bahan yang ingin diganti, nanti kita bantu kasih alternatifnya!")
+    st.title("Kamu Butuh Pengganti Bahan Karena Ada Yang Enggak Kamu Suka??")
+    st.markdown("Masukkan bahan yang mau kamu ganti yaa, nanti kita bantu kasih alternatifnya!")
     st.markdown("Contoh: susu, telur, daging, keju, dll")
 
     # Simpan hasil di session_state
