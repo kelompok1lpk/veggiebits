@@ -4,6 +4,17 @@ import streamlit as st
 background_url = "https://i.ibb.co.com/xqwsXfq8/IMG-0774.jpg"
 
 st.markdown(
+    """
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+    <style>
+    html, body, [class*="css"]  {
+        font-family: 'Comic Neue', cursive;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+st.markdown(
     f"""
     <style>
     .stApp {{
@@ -28,15 +39,12 @@ def halaman_1():
     st.markdown(
     """
     <h1 style='
-        font-weight: 900;
+        font-weight: 1000;
+        font-size: 48px;
         color: #1A1A1A;
-        text-shadow: 1px 1px 3px rgba(255,255,255,0.6);
-        background-color: rgba(255, 255, 255, 0.6);
-        padding: 10px;
-        border-radius: 10px;
-        display: inline-block;
+        text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
     '>
-        🥦 Helloooww welcome at VeggieBites guys!!
+        🌱 Helloooww welcome at VeggieBites guys!!
     </h1>
     """,
     unsafe_allow_html=True
