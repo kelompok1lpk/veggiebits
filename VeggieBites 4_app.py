@@ -17,7 +17,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
 # ---------- SESSION STATE UNTUK NAVIGASI ----------
 if 'page' not in st.session_state:
     st.session_state.page = 0
@@ -52,6 +51,10 @@ def halaman_1():
             "Vegan total (no hewani et all)"
         ]
     )
+    
+    if st.button("Next"):
+        st.session_state["page"] = "halaman_2"
+        
 def halaman_2():
     st.markdown('<div class="card">', unsafe_allow_html=True)
     st.title("Kebutuhan Nutrisi Kamu")
