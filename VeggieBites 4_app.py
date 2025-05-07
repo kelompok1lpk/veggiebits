@@ -107,44 +107,42 @@ def halaman_4():
     st.markdown("Masukkan bahan yang ingin diganti, nanti kita bantu kasih alternatifnya!")
     st.markdown("Contoh: susu, telur, daging, keju, dll")
 
-    # Inisialisasi session state
+    # Input bahan
     if "hasil_pengganti" not in st.session_state:
         st.session_state.hasil_pengganti = ""
 
-    bahan = st.text_input("")
+    with st.form("form_pengganti"):
+        bahan = st.text_input("Masukkan nama bahan yang mau diganti:")
+        cari = st.form_submit_button("Search")
+        if cari:
+            pengganti = {
+                "susu": "susu almond / oat milk",
+                "telur": "chia egg (chia + air)",
+                "daging": "jamur, tempe, atau tofu",
+                "keju": "keju vegan berbasis kacang",
+                "daging sapi": "tempe, tahu, jamur tiram, jackfruit, seitan",
+                "daging ayam": "tempe, tahu, jamur tiram, jackfruit, seitan",
+                "daging giling": "kacang hitam, kacang merah, walnut cincang, tahu hancur",
+                "susu sapi": "susu almond, susu kedelai, oat milk, coconut milk",
+                "keju cheddar": "keju vegan, nutritional yeast",
+                "parmesan": "nutritional yeast, kacang mete blend",
+                "cream cheese": "tahu sutra + lemon + garam (di-blend)",
+                "mentega": "minyak kelapa, margarin vegan, alpukat",
+                "mayones": "mayones vegan, tofu + mustard + lemon",
+            }
+            hasil = pengganti.get(bahan.lower(), "Bahan yang kamu cari belum ada di daftar. Coba bahan lain yuk!")
+            st.session_state.hasil_pengganti = f"Pengganti untuk {bahan}: {hasil}"
 
-    # Tombol Search
-    if st.button("Search"):
-        pengganti = {
-            "susu": "susu almond / oat milk",
-            "telur": "chia egg (chia + air)",
-            "daging": "jamur, tempe, atau tofu",
-            "keju": "keju vegan berbasis kacang",
-            "daging sapi": "tempe, tahu, jamur tiram, jackfruit, seitan",
-            "daging ayam": "tempe, tahu, jamur tiram, jackfruit, seitan",
-            "daging giling": "kacang hitam, kacang merah, walnut cincang, tahu hancur",
-            "susu sapi": "susu almond, susu kedelai, oat milk, coconut milk",
-            "keju cheddar": "keju vegan, nutritional yeast",
-            "parmesan": "nutritional yeast, kacang mete blend",
-            "cream cheese": "tahu sutra + lemon + garam (di-blend)",
-            "mentega": "minyak kelapa, margarin vegan, alpukat",
-            "mayones": "mayones vegan, tofu + mustard + lemon",
-        }
-        hasil = pengganti.get(bahan.lower(), "Bahan yang kamu cari belum ada di daftar. Coba bahan lain yuk!")
-        st.session_state.hasil_pengganti = f"Pengganti untuk {bahan}: {hasil}"
-
-    # Tampilkan hasil jika ada
     if st.session_state.hasil_pengganti:
         st.success(st.session_state.hasil_pengganti)
 
-    # Navigasi
     col1, col2 = st.columns(2)
     if col1.button("Back"):
         st.session_state.page -= 1
-        st.session_state.hasil_pengganti = ""  # reset hasil saat back
+        st.session_state.hasil_pengganti = ""
     if col2.button("Next"):
         st.session_state.page += 1
-        st.session_state.hasil_pengganti = ""  # reset hasil saat next
+        st.session_state.hasil_pengganti = ""
         
 def halaman_5():
     st.markdown('<div class="card">', unsafe_allow_html=True)
