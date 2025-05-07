@@ -24,24 +24,6 @@ if 'page' not in st.session_state:
 
 # ---------- HALAMAN-HALAMAN ----------
 def halaman_1():
-    st.markdown(
-        """
-        <style>
-        body {
-            background-image: url("https://i.ibb.co.com/xqwsXfq8/IMG-0774.jpg");
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-
-        .blur-container {
-            background-color: rgba(255, 255, 255, 0.5);
-            backdrop-filter: blur(8px);
-            padding: 20px;
-            border-radius: 10px;
-        }    
-        </style>
-        """,
         unsafe_allow_html=True
     )
     st.markdown('<div class="card">', unsafe_allow_html=True)
