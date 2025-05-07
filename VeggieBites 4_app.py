@@ -107,7 +107,10 @@ def halaman_4():
     st.markdown("Masukkan bahan yang ingin diganti, nanti kita bantu kasih alternatifnya!")
     st.markdown("Contoh: susu, telur, daging, keju, dll")
 
-    # Input bahan
+    # Inisialisasi session state
+    if "hasil_pengganti" not in st.session_state:
+        st.session_state.hasil_pengganti = ""
+
     bahan = st.text_input("")
 
     # Tombol Search
@@ -128,14 +131,20 @@ def halaman_4():
             "mayones": "mayones vegan, tofu + mustard + lemon",
         }
         hasil = pengganti.get(bahan.lower(), "Bahan yang kamu cari belum ada di daftar. Coba bahan lain yuk!")
-        st.success(f"Pengganti untuk {bahan}: {hasil}")
+        st.session_state.hasil_pengganti = f"Pengganti untuk {bahan}: {hasil}"
+
+    # Tampilkan hasil jika ada
+    if st.session_state.hasil_pengganti:
+        st.success(st.session_state.hasil_pengganti)
 
     # Navigasi
     col1, col2 = st.columns(2)
     if col1.button("Back"):
         st.session_state.page -= 1
+        st.session_state.hasil_pengganti = ""  # reset hasil saat back
     if col2.button("Next"):
         st.session_state.page += 1
+        st.session_state.hasil_pengganti = ""  # reset hasil saat next
         
 def halaman_5():
     st.markdown('<div class="card">', unsafe_allow_html=True)
