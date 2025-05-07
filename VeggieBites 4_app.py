@@ -33,24 +33,29 @@ if 'page' not in st.session_state:
 
 # ---------- HALAMAN-HALAMAN ----------
 def halaman_1():
-    st.markdown("""
+    st.markdown(
+        """
         <h1 style="font-weight: 1000;
                    font-size: 48px;
                    color: #1A1A1A;
                    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);">
             🥦 Helloooww welcome at VeggieBites guys!!
         </h1>
-    """, unsafe_allow_html=True)
-    st.markdown("*Cari tahu yukk tipe vegetarian kamu yang mana biar kita bisa bantu kasih menu sehat yang sesuai buat kamuu><.*")
-    pilihan = st.radio("Kamu termasuk tipe vegetarian yang mana nih?", 
-        ["Lacto-ovo (telur & susu masih aku makan sieh)",
-         "Lacto (only susu, telur big no no no)",
-         "Ovo (telur oke sieh, tapi susu ga dulu deh)",
-         "Vegan total (no hewani at all)"])
-    st.session_state["tipe_vegetarian"] = pilihan
-    if st.button("Next"):
-        st.session_state.page += 1
-    st.markdown('</div>', unsafe_allow_html=True)
+        """, 
+        unsafe_allow_html=True
+    )
+
+    st.markdown("Cari tahu yukk tipe vegetarian kamu yang mana biar kita bisa bantu kasih menu sehat yang sesuai buat kamuu><.")
+
+    pilihan = st.radio(
+        "Kamu termasuk tipe vegetarian yang mana nih?",
+        [
+            "Lacto-ovo (telur & susu masih aku makan sieh)",
+            "Lacto (only susu, telur big no no no)",
+            "Ovo (telur oke sieh, tapi susu ga dulu deh)",
+            "Vegan total (no hewani et all)"
+        ]
+    )
 
 def halaman_2():
     st.markdown('<div class="card">', unsafe_allow_html=True)
