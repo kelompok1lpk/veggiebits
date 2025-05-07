@@ -3,41 +3,20 @@ import streamlit as st
 # ---------- CONFIGURASI PAGE ----------
 st.set_page_config(page_title="Menu Sehat Vegetarian", layout="centered")
 
-# ---------- STYLING GEMES + KOTAK HIJAU TRANSPARAN ----------
-page_bg_img = '''
-<style>
-[data-testid="stAppViewContainer"] {
-    background-image: url("https://pin.it/1Llo8YZZV");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-div.stButton > button {
-    background-color: #FFD3DA;
-    color: black;
-    font-weight: bold;
-    border-radius: 10px;
-    height: 3em;
-    width: 8em;
-    margin: 1em 0.5em;
-}
-h1, h2, h3 {
-    color: #FF6F91;
-    text-align: center;
-}
-.card {
-    background: rgba(204, 255, 204, 0.7); 
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-</style>
-'''
-st.markdown(page_bg_img, unsafe_allow_html=True)
+# ---------- STYLING BACKGROUND CUSTOM ----------
+st.markdown(
+    f"""
+    <style>
+    body {{
+        background-image: url("file:///mnt/data/veggie_background.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 # ---------- SESSION STATE UNTUK NAVIGASI ----------
 if 'page' not in st.session_state:
