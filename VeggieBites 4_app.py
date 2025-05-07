@@ -7,7 +7,7 @@ st.markdown(
     """
     <style>
     body {
-        background-image: url("https://i.ibb.co/G9dCn2q/veggiebg.jpg");
+        background-image: url("https://ibb.co.com/nM406nM8");
         background-size: cover;
         background-attachment: fixed;
     }
@@ -21,7 +21,7 @@ st.markdown(
     f"""
     <style>
     body {{
-        background-image: url("file:///mnt/data/veggie_background.jpeg");
+        background-image: url("https://ibb.co.com/nM406nM8");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
