@@ -7,7 +7,7 @@ st.markdown(
     f"""
     <style>
     .stApp {{
-        background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+        background: linear-grafient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
         background-image: url("{background_url}");
         background-size: cover;
         background-repeat: no-repeat;
