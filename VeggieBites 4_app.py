@@ -5,15 +5,12 @@ background_url = "https://i.ibb.co.com/xqwsXfq8/IMG-0774.jpg"
 
 st.markdown(
     """
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
-    <style>
-    html, body, [class*="css"]  {
-        font-family: 'Comic Neue', cursive;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
+<style>
+html, body, [class*="css"]  {
+    font-family: 'Fredoka', sans-serif;
+}
+</style>
 st.markdown(
     f"""
     <style>
@@ -44,7 +41,7 @@ def halaman_1():
         color: #1A1A1A;
         text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
     '>
-        🌱 Helloooww welcome at VeggieBites guys!!
+       🥦Helloooww welcome at VeggieBites guys!!
     </h1>
     """,
     unsafe_allow_html=True
