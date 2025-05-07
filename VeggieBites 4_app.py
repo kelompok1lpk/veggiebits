@@ -119,10 +119,11 @@ def halaman_4():
             "keju cheddar/parmesan": "keju nabati dari kacang mete, nutritional yeast (untuk rasa cheesy)",
             "cream cheese": "tahu sutra + lemon + garam (di-blend)",
             "mentega": "minyak kelapa, margarin vegan, alpukat",
-            "mayones": "mayones vegan, atau tofu + mustard + lemon"
-        }
+            "mayones": "mayones vegan, atau tofu + mustard + lemon"}
         hasil = pengganti.get(bahan.lower(), "bahan yang kamu cari ga ada nih, cari yang lain yuk")
         st.success(f"Pengganti untuk *{bahan}*: {hasil}")
+
+    
     col1, col2 = st.columns(2)
     if col1.button("Back"):
         st.session_state.page -= 1
