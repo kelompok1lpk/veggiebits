@@ -34,7 +34,7 @@ if 'page' not in st.session_state:
 # ---------- HALAMAN-HALAMAN ----------
 def halaman_1():
     st.markdown("""
-        <h1 style='font-weight: 1000;
+        <h1 style='font-weight: 900;
                    font-size: 48px;
                    color: #1A1A1A;
                    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);'>
