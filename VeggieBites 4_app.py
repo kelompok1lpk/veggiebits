@@ -164,6 +164,8 @@ def halaman_5():
 halaman_fungsi = {
     "halaman_1": halaman_1,
     "halaman_2": halaman_2,
-    "halaman_3": halaman_3
+    "halaman_3": halaman_3,
+    "halaman_4": halaman_4,
+    "halaman_5": halaman_5
 }
 halaman_fungsi[st.session_state.page]()
