@@ -161,14 +161,9 @@ def halaman_5():
     st.markdown('</div>', unsafe_allow_html=True)
 
 # ---------- JALANKAN HALAMAN ----------
-halaman_fungsi = {
-    "halaman_1": halaman_1,
-    "halaman_2": halaman_2,
-    "halaman_3": halaman_3,
-    "halaman_4": halaman_4,
-    "halaman_5": halaman_5
-}
 if "page" not in st.session_state:
-    st.session_state.page = "halaman_1"
-    
-halaman_fungsi[st.session_state.-page]()
+    st.session_state.page = 0
+
+halaman_fungsi = [halaman_1, halaman_2, halaman_3, halaman_4, halaman_5]
+
+halaman_fungsi[st.session_state.page]()
