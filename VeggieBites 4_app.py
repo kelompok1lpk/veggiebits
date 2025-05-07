@@ -34,13 +34,14 @@ if 'page' not in st.session_state:
 # ---------- HALAMAN-HALAMAN ----------
 def halaman_1():
     st.markdown("""
-<h1 style='font-weight: 1000;
+        <h1 style='
+            font-weight: 1000;
             font-size: 48px;
             color: #1A1A1A;
             text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);'>
-    🥦 Helloooww welcome at VeggieBites guys!!
-</h1>
-""", unsafe_allow_html=True)
+            🥦 Helloooww welcome at VeggieBites guys!!
+        </h1>
+    """, unsafe_allow_html=True)
     
     st.markdown("*Cari tahu yukk tipe vegetarian kamu yang mana biar kita bisa bantu kasih menu sehat yang sesuai buat kamuu><.*")
     pilihan = st.radio("Kamu termasuk tipe vegetarian yang mana nih?", 
