@@ -3,6 +3,19 @@ import streamlit as st
 # ---------- CONFIGURASI PAGE ----------
 st.set_page_config(page_title="Menu Sehat Vegetarian", layout="centered")
 
+st.markdown(
+    """
+    <style>
+    body {
+        background-image: url("https://i.ibb.co/G9dCn2q/veggiebg.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # ---------- STYLING BACKGROUND CUSTOM ----------
 st.markdown(
     f"""
