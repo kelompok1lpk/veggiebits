@@ -51,12 +51,11 @@ def halaman_1():
         "Kamu termasuk tipe vegetarian yang mana nih?",
         [
             "Lacto-ovo (telur & susu masih aku makan sieh)",
-            "Lacto (only susu, telur big no no no)",
+            "Lacto (only susu, telur big no no)",
             "Ovo (telur oke sieh, tapi susu ga dulu deh)",
             "Vegan total (no hewani et all)"
         ]
     )
-
 def halaman_2():
     st.markdown('<div class="card">', unsafe_allow_html=True)
     st.title("Kebutuhan Nutrisi Kamu")
