@@ -6,7 +6,11 @@ background_url = "https://i.ibb.co.com/xqwsXfq8/IMG-0774.jpg"
 st.markdown(
     f"""
     <style>
+     body, h1, h2, h3, h4, h5, h6, p, span, label, div, li, ul, ol, select, input, textarea, button {
+        color: white !important;
+    }
     .stApp {{
+        background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
         background-image: url("{background_url}");
         background-size: cover;
         background-repeat: no-repeat;
